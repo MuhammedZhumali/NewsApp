@@ -1,0 +1,62 @@
+package com.example.newsapp.fragments;
+
+import static com.example.newsapp.MainActivity.ctr;
+
+import android.os.Bundle;
+
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.example.newsapp.MyAdapter;
+import com.example.newsapp.NetworkService;
+import com.example.newsapp.NewsModel;
+import com.example.newsapp.R;
+import com.example.newsapp.NewsResObject;
+
+import java.util.ArrayList;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
+public class HomeFragment extends Fragment {
+    private String api = "5482b55591664ef088aa7e7548fd71c6";
+    private ArrayList<NewsModel> news;
+    private MyAdapter adapter;
+    private RecyclerView rvHome;
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_home, null);
+        rvHome = view.findViewById(R.id.rvHome);
+        news = new ArrayList<>();
+        rvHome.setLayoutManager(new LinearLayoutManager(getContext()));
+        adapter = new MyAdapter(getContext(), news);
+        rvHome.setAdapter(adapter);
+        findHomeNews();
+        return view;
+    }
+
+    private void findHomeNews() {
+        NetworkService.getInstance().getNews(ctr, 100, api).enqueue(new Callback<NewsResObject>() {//place to queue
+            @Override
+            public void onResponse(Call<NewsResObject> call, Response<NewsResObject> response) {
+                if(response.isSuccessful()){
+                    news.addAll(response.body().getArticles());
+                    adapter.notifyDataSetChanged();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<NewsResObject> call, Throwable t) {
+
+            }
+        });
+    }
+}

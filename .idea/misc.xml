@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProjects/NewsApp/app/src/main/res/layout/activity_main.xml" value="0.18614130434782608" />
+        <entry key="..\:/AndroidStudioProjects/NewsApp/app/src/main/res/layout/activity_news_detail.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidStudioProjects/NewsApp/app/src/main/res/layout/create_fragment.xml" value="0.24818840579710144" />
+        <entry key="..\:/AndroidStudioProjects/NewsApp/app/src/main/res/layout/fragment_food.xml" value="0.17831813576494426" />
+        <entry key="..\:/AndroidStudioProjects/NewsApp/app/src/main/res/layout/fragment_home.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidStudioProjects/NewsApp/app/src/main/res/layout/fragment_policy.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidStudioProjects/NewsApp/app/src/main/res/layout/fragment_science.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidStudioProjects/NewsApp/app/src/main/res/layout/fragment_sports.xml" value="0.24818840579710144" />
+        <entry key="..\:/AndroidStudioProjects/NewsApp/app/src/main/res/layout/layout_item.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/NewsApp/app/src/main/res/menu/news.xml" value="0.36666666666666664" />
+        <entry key="..\:/NewsApp/app/src/main/res/layout/activity_main.xml" value="0.26222826086956524" />
+        <entry key="..\:/NewsApp/app/src/main/res/layout/activity_news_detail.xml" value="0.276268115942029" />
+        <entry key="..\:/NewsApp/app/src/main/res/layout/fragment_food.xml" value="0.2957427536231884" />
+        <entry key="..\:/NewsApp/app/src/main/res/layout/fragment_home.xml" value="0.2957427536231884" />
+        <entry key="..\:/NewsApp/app/src/main/res/layout/fragment_policy.xml" value="0.2957427536231884" />
+        <entry key="..\:/NewsApp/app/src/main/res/layout/fragment_science.xml" value="0.2957427536231884" />
+        <entry key="..\:/NewsApp/app/src/main/res/layout/fragment_sports.xml" value="0.2957427536231884" />
+        <entry key="..\:/NewsApp/app/src/main/res/layout/fragment_technology.xml" value="0.2957427536231884" />
+        <entry key="..\:/NewsApp/app/src/main/res/layout/layout_item.xml" value="0.2957427536231884" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
